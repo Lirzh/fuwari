@@ -4,7 +4,7 @@ published: 2024-04-10
 description: 使用 Expressive Code 在 Markdown 中展示代码块的效果。
 tags: [example]
 category: example
-draft: false
+draft: true
 ---
 
 在这里，我们将探索使用 [Expressive Code](https://expressive-code.com/) 时代码块的显示效果。提供的示例基于官方文档，您可以参考官方文档了解更多详情。
