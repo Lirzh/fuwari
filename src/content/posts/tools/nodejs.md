@@ -4,7 +4,7 @@ published: 2026-02-21
 description: "记录了自用的nodejs相关脚本"
 tags: [tools,nodejs]
 category: tools,nodejs
-draft: true
+draft: false
 ---
 
 :::note
