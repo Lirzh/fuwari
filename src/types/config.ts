@@ -64,10 +64,12 @@ export type ProfileConfig = {
 	avatar?: string;
 	name: string;
 	bio?: string;
+	emails?: string[];
 	links: {
 		name: string;
-		url: string;
+		url?: string;
 		icon: string;
+		qrcode?: string;
 	}[];
 };
 

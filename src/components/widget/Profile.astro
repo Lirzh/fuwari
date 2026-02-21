@@ -24,15 +24,61 @@ const config = profileConfig;
         <div class="text-center text-neutral-400 mb-2.5 transition">{config.bio}</div>
         <div class="flex flex-wrap gap-2 justify-center mb-1">
             {config.links.length > 1 && config.links.map(item =>
-                    <a rel="me" aria-label={item.name} href={item.url} target="_blank" class="btn-regular rounded-lg h-10 w-10 active:scale-90">
-                        <Icon name={item.icon} class="text-[1.5rem]"></Icon>
-                    </a>
+                    item.qrcode ? (
+                        <div class="relative group">
+                            <button aria-label={item.name} class="btn-regular rounded-lg h-10 w-10 active:scale-90">
+                                <Icon name={item.icon} class="text-[1.5rem]"></Icon>
+                            </button>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block z-50">
+                                <div class="card-base p-2 shadow-lg w-36">
+                                    <img src={item.qrcode} alt={`${item.name} QR Code`} class="w-full h-auto aspect-square rounded-lg object-contain" />
+                                </div>
+                            </div>
+                        </div>
+                    ) : item.url ? (
+                        <a rel="me" aria-label={item.name} href={item.url} target="_blank" class="btn-regular rounded-lg h-10 w-10 active:scale-90">
+                            <Icon name={item.icon} class="text-[1.5rem]"></Icon>
+                        </a>
+                    ) : null
             )}
-            {config.links.length == 1 && <a rel="me" aria-label={config.links[0].name} href={config.links[0].url} target="_blank"
-                                            class="btn-regular rounded-lg h-10 gap-2 px-3 font-bold active:scale-95">
-                <Icon name={config.links[0].icon} class="text-[1.5rem]"></Icon>
-                {config.links[0].name}
-            </a>}
+            {config.links.length == 1 && (
+                config.links[0].qrcode ? (
+                    <div class="relative group">
+                        <button aria-label={config.links[0].name} class="btn-regular rounded-lg h-10 gap-2 px-3 font-bold active:scale-95">
+                            <Icon name={config.links[0].icon} class="text-[1.5rem]"></Icon>
+                            {config.links[0].name}
+                        </button>
+                        <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block z-50">
+                            <div class="card-base p-2 shadow-lg w-36">
+                                <img src={config.links[0].qrcode} alt={`${config.links[0].name} QR Code`} class="w-full h-auto aspect-square rounded-lg object-contain" />
+                            </div>
+                        </div>
+                    </div>
+                ) : (
+                    <a rel="me" aria-label={config.links[0].name} href={config.links[0].url} target="_blank"
+                                                    class="btn-regular rounded-lg h-10 gap-2 px-3 font-bold active:scale-95">
+                        <Icon name={config.links[0].icon} class="text-[1.5rem]"></Icon>
+                        {config.links[0].name}
+                    </a>
+                )
+            )}
+            {config.emails && config.emails.length > 0 && (
+                <div class="relative group">
+                    <button aria-label="Email" class="btn-regular rounded-lg h-10 w-10 active:scale-90">
+                        <Icon name="fa6-solid:envelope" class="text-[1.5rem]"></Icon>
+                    </button>
+                    <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block z-50">
+                        <div class="card-base p-2 min-w-max shadow-lg">
+                            {config.emails.map(email => (
+                                <a href={`mailto:${email}`} class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-[var(--primary)]/10 transition whitespace-nowrap">
+                                    <Icon name="fa6-solid:envelope" class="text-sm text-neutral-500"></Icon>
+                                    <span class="text-sm text-neutral-700 dark:text-neutral-300">{email}</span>
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     </div>
 </div>

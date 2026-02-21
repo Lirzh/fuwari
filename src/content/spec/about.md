@@ -1,9 +1,23 @@
-# About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+# 关于本站
 
-::github{repo="saicaca/fuwari"}
+这是 Lirzh 的博客
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+::github{repo="lirzh/fuwari"}
+
+# 关于我
+
+开源爱好者 / 2010 年出生 / INTJ-A / [STCN](https://smart-teach.cn/) 成员
+
+我目前是中国福建省莆田第一中学的高一学生。
+
+📌 高一 | 住校 | 上学期间有充足的时间进行更新和维护
+
+## 🎉 技能
+
+运维 🔧 | 开源硬件 💻 | 3D 打印与激光切割 🖨️
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Lirzh&show_icons=true&theme=default&count_private=true" alt="Lirzh's GitHub stats" width="60%" />
+</div>
+
+---
