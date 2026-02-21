@@ -67,7 +67,7 @@ const config = profileConfig;
                     <button aria-label="Email" class="btn-regular rounded-lg h-10 w-10 active:scale-90">
                         <Icon name="fa6-solid:envelope" class="text-[1.5rem]"></Icon>
                     </button>
-                    <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block z-50">
+                    <div class="absolute bottom-full left-1/2 -translate-x-1/2 pt-2 hidden group-hover:block z-50">
                         <div class="card-base p-2 min-w-max shadow-lg">
                             {config.emails.map(email => (
                                 <a href={`mailto:${email}`} class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-[var(--primary)]/10 transition whitespace-nowrap">
