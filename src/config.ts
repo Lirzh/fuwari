@@ -89,6 +89,11 @@ export const profileConfig: ProfileConfig = {
 			icon: "fa6-brands:steam",
 			url: "https://steamcommunity.com/id/lirzh/",
 		},
+		{
+			name: "RSS",
+			icon: "fa6-solid:rss",
+			url: "/rss.xml",
+		},
 	],
 };
 
