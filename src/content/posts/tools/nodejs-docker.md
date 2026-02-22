@@ -2,8 +2,8 @@
 title: Nodejs 的 Docker 指北
 published: 2026-02-22
 description: "记录了自用的nodejs相关docker用法"
-tags: [tools]
-category: tools,nodejs,docker
+tags: [tools,nodejs,docker]
+category: tools
 draft: false
 ---
 
