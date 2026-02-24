@@ -84,6 +84,13 @@ export const profileConfig: ProfileConfig = {
 			// `pnpm add @iconify-json/<icon-set-name>`
 			url: "https://space.bilibili.com/3537117076523539",
 		},
+		// {
+		// 	name: "Smart-Teach",
+		// 	icon: "fa6-brands:smarttech", // Visit https://icones.js.org/ for icon codes
+		// 	// You will need to install the corresponding icon set if it's not already included
+		// 	// `pnpm add @iconify-json/<icon-set-name>`
+		// 	url: "https://forum.smart-teach.cn/u/lirzh",
+		// },
 		{
 			name: "Steam",
 			icon: "fa6-brands:steam",
