@@ -1,11 +1,14 @@
 ---
-title: Raid 简单指南
+title: Hydro 系列 - Raid 简单指南
 published: 2026-02-26
 description: "记录了 raid 的基础用法"
-tags: [tools,raid]
+tags: [tools,raid,hydro]
 category: tools
 draft: false
 ---
+# 这是断篇
+
+由于资金链不足（硬盘没凑够），该篇章不想续写了。。。
 
 # raid 介绍
 
@@ -29,13 +32,23 @@ RAID 60：RAID 6组合成RAID 0，提供更高级别的性能和容错能力。
 
 # raid 环境
 
+## 硬件选择
+
 硬盘选择 3 块相同型号的希捷 1T 机械硬盘（`ST1000DM003`，运行`5.9W`/闲置`3.36W`/待机`0.63W`，读写速度能有 `210 ~ 185 MB/s`），1 块固体装系统电脑硬件选择 `i3 5100 + 4G ddr3` （很牢了）。
 
 由于资金不足，只能选择 软Raid，也就是软件模拟 Raid，因此系统选择 `Ubuntu 24.04 LTS` （这个搭配属于很猎奇了）。
 
 工具则选择 `mdadm` 以及 `cockpit` 。
 
+## 性能估算
+
 预计一下，小文件读写能力算 `100MB/s` 的话，总文件大小算 `500G` ，完整读写一次保持在 `85 minutes` 左右，后期因为会使用增量备份，时间应该不超过 `2 minutes` ，而完整拉取一次（大小算 `600G` ）耗时应该在 `102 minutes` 左右，属于能接受的范畴。
+
+## 磁盘 URE 估算
+
+[关于磁盘URE的担忧 · fangpsh's blog](https://fangpsh.github.io/posts/2024/2024-03-19.html)
+
+首先，URE 的概率本身是极低的，而且我采用了 3 块硬盘做 `raid1`，正常来说 当且仅当 同时有两块及以上的硬盘在同一个扇区发生 URE 时才会造成数据损坏，就算坏了，其他数据也还是好的，而且我将其作为 题目的测试数据 的存档仓库，其实丢一两个测试数据无伤大雅，`Hydro` 会忽略掉不可用的测试数据（应该吧）。
 
 # 具体操作
 
@@ -65,6 +78,4 @@ sdb   1TB  disk  ST1000DM003-XXXX  Z1DYYYYYY
 sdc   1TB  disk  ST1000DM003-XXXX  Z1DZZZZZZ
 ```
 
-SERIAL 那一列就是硬盘唯一序列号，在硬盘的标签上。
-
-# 未完待续
+`SERIAL` 那一列就是硬盘唯一序列号，在硬盘的标签上。
