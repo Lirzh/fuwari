@@ -1,6 +1,6 @@
 ---
 title: Raid 简单指南
-published: 2026-02-25
+published: 2026-02-26
 description: "记录了 raid 的基础用法"
 tags: [tools,raid]
 category: tools
@@ -25,15 +25,17 @@ RAID 50：RAID 5组合成RAID 0，提供较高的性能和容错能力。
 RAID 60：RAID 6组合成RAID 0，提供更高级别的性能和容错能力。
 ```
 
-多的不说，因为我对速度无要求，但对容错有极高的要求，所以选择 RAID 1。
+多的不说，因为我对速度无要求，但对容错有极高的要求，预计数据会有 600G 左右，所以选择 RAID 1。
 
 # raid 环境
 
-硬盘选择 3 块相同型号的 500G 机械硬盘，1 块固体装系统电脑硬件选择 i3 5100 + 4G ddr3 （很牢了）。
+硬盘选择 3 块相同型号的希捷 1T 机械硬盘（`ST1000DM003`，运行`5.9W`/闲置`3.36W`/待机`0.63W`，读写速度能有 `210 ~ 185 MB/s`），1 块固体装系统电脑硬件选择 `i3 5100 + 4G ddr3` （很牢了）。
 
-由于资金不足，只能选择 软Raid，也就是软件模拟 Raid，因此系统选择 Ubuntu 24.04 LTS。
+由于资金不足，只能选择 软Raid，也就是软件模拟 Raid，因此系统选择 `Ubuntu 24.04 LTS` （这个搭配属于很猎奇了）。
 
-工具则选择 mdadm 以及 cockpit。
+工具则选择 `mdadm` 以及 `cockpit` 。
+
+预计一下，小文件读写能力算 `100MB/s` 的话，总文件大小算 `500G` ，完整读写一次保持在 `85 minutes` 左右，后期因为会使用增量备份，时间应该不超过 `2 minutes` ，而完整拉取一次（大小算 `600G` ）耗时应该在 `102 minutes` 左右，属于能接受的范畴。
 
 # 具体操作
 
@@ -46,5 +48,23 @@ RAID 60：RAID 6组合成RAID 0，提供更高级别的性能和容错能力。
 ```bash
 sudo apt install mdadm
 ```
+
+## 对应硬盘到系统中
+
+查看所有硬盘的型号、序列号、盘符
+
+```bash
+lsblk -o NAME,SIZE,TYPE,MODEL,SERIAL
+```
+
+你会看到类似：
+
+```bash
+sda   1TB  disk  ST1000DM003-XXXX  Z1DXXXXXX
+sdb   1TB  disk  ST1000DM003-XXXX  Z1DYYYYYY
+sdc   1TB  disk  ST1000DM003-XXXX  Z1DZZZZZZ
+```
+
+SERIAL 那一列就是硬盘唯一序列号，在硬盘的标签上。
 
 # 未完待续
