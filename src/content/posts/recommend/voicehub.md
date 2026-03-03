@@ -11,6 +11,8 @@ draft: false
 
 我作为 `STCN` 里的一位成员，也参与 `VoiceHub` 的部分开发工作，但以下仅以 ***我个人*** 的视角，不代表 `VoiceHub` 开发团队的看法，也不代表我作为开发者的看法。
 
+这是我本来想做个推荐文章的，但不知不觉写成了议论文，就不是很想继续写了，有点烂尾。
+
 # VoiceHub 介绍
 
 ::github{repo="laoshuikaixue/VoiceHub"}
