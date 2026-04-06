@@ -1,6 +1,6 @@
 ---
 title: 中望3D Linux 简单指南
-published: 2026-04-6
+published: 2026-04-06
 description: "记录了在 Ubuntu 上使用 中望3D Linux 的一些问题"
 tags: [tools,3d]
 category: tools
