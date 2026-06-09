@@ -26,6 +26,4 @@ draft: false
 
 ## 一些个人感受
 
-平心而论，VSCode 在插件生态和成熟度上仍然是王者，某些 niche 领域的工具链目前还是 VSCode 独一份。但在日常开发场景下，Trae 已经完全够用，而且整体体验更轻快。
-
-如果你是 Linux 用户，又对 AI 辅助编程有需求，不妨试试看 Trae。不一定要彻底换掉 VSCode，两者并行使用也是个不错的选择。
+唯一的遗憾是 **Trae Solo 目前还没有 Linux 版本**。作为一个已经在 Linux 上扎根的用户，只能眼巴巴看着 Windows 和 macOS 用户体验 Solo，略感羡慕。希望 Trae 团队能早日把 Solo 也带到 Linux 平台上来。
