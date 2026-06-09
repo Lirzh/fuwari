@@ -13,7 +13,7 @@ draft: false
 
 ## Ubuntu 时期：回归 VSCode
 
-后来换成了 Ubuntu 做主力系统，翻了一圈发现 Trae 还没有 Linux 版本。虽说可以用 Wine 之类的跑起来，但总觉得不够原生，索性就换回了 VSCode。不过话说回来，Trae 其实可以用 VSCode 的插件，所以严格来说倒也不存在什么插件生态的差距。
+后来换成了 Ubuntu 做主力系统，翻了一圈发现 Trae 还没有 Linux 版本。虽说可以用 Wine 之类的跑起来，但总觉得不够原生，索性就换回了 VSCode。
 
 ## Debian 13：重新相遇 Trae
 
