@@ -1,11 +1,17 @@
 ---
 title: 中望3D Linux 简单指南
-published: 2026-04-06
+published: 2026-07-11
 description: "记录了在 Ubuntu 上使用 中望3D Linux 的一些问题"
 tags: [tools,3d]
 category: tools
 draft: false
 ---
+
+## 关于 Debian
+
+似乎不支持 Debian，不知道为什么报错一对，猜测是因为 Debian 用 apt 安装出的库不是最新的。
+
+~~这个保守，很 Debian。~~
 
 ## 下载
 

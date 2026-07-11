@@ -1,6 +1,6 @@
 ---
 title: Hydro 系列 - Raid 简单指南
-published: 2026-02-26
+published: 2026-07-11
 description: "记录了 raid 的基础用法"
 tags: [tools,raid,hydro]
 category: tools
@@ -9,6 +9,10 @@ draft: false
 # 这是断篇
 
 由于资金链不足（硬盘没凑够），该篇章不想续写了。。。
+
+而且我获得一台带有 硬件RAID 的 Dell PowerEdge R730 服务器，因此更没有理由去配置软件 RAID。
+
+~~（5块 12T 硬盘组 RAID 还是太爽了）~~
 
 # raid 介绍
 
