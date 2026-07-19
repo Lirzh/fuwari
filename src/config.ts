@@ -54,7 +54,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/demo-avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	avatar: "assets/images/avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "Lirzh",
 	bio: "朝闻道，夕死可矣！", // A short bio or description to display on the profile section
 	emails: ["lirzh1024@163.com", "lirzh@smart-teach.cn"], // Email addresses to display on the profile section
