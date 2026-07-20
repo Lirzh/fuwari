@@ -12,6 +12,8 @@
 
 - [莆一 湄轩历史社](https://py-history.lirzh.top)
 
+- [莆一 极限飞盘社](https://py-frisbee.lirzh.top)
+
 ## LaoShui（老水） 的相关网站
 
 - [LaoShui 的 Blog](https://blog.lao-shui.top/)
