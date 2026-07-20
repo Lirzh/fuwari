@@ -15,8 +15,9 @@
 ## LaoShui（老水） 的相关网站
 
 - [LaoShui 的 Blog](https://blog.lao-shui.top/)
-- [Laoshui 的 Voicehub 示范站](https://voicehub.smart-teach.cn/)
+
+- [Laoshui 的 Voicehub](https://voicehub.smart-teach.cn/)
 
 ::github{repo="laoshuikaixue/laoshuikaixue"}
 
-如果你想要交换友链，请通过邮件联系我：<lirzh1024@163.com>。
+如果你想要交换友链，请通过 QQ 、微信 或 邮件 联系我。
