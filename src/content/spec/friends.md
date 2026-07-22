@@ -10,6 +10,8 @@
 
 - [莆一 铁砧运维社团](https://py-anvil.lirzh.top)
 
+- [莆一 创意智造社](https://py-create.lirzh.top)
+
 - [莆一 湄轩历史社](https://py-history.lirzh.top)
 
 - [莆一 极限飞盘社](https://py-frisbee.lirzh.top)
